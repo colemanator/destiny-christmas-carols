@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width">
 
     <link rel="canonical" href="https://destinycommunitycarols.com/">
-    <link rel="shortcut icon" type="image/png" href="./favicon.png"/>
+    <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
 
     <title>Destiny Community Carols</title>
     <meta name="description" content="Fun night out for the entire family with live entertainment and markets stalls hosted by Destiny Church">
@@ -31,18 +31,18 @@
         <img
             class="header__img lozad"
             alt="Boy looking at Christmas tree"
-            data-src="./images/header-background-1040.jpg"
+            data-src="/images/header-background-1040.jpg"
             data-srcset="
-                ./images/header-background-720.jpg 720w,
-                ./images/header-background-1040.jpg 1040w,
-                ./images/header-background-2560.jpg 2560w
+                /images/header-background-720.jpg 720w,
+                /images/header-background-1040.jpg 1040w,
+                /images/header-background-2560.jpg 2560w
             "
         />
         <!-- Fallback if JS is disabled and we can't lazy load -->
         <noscript class="header__noscript__img">
             <img
                 class="header__img"
-                src="./images/header-background-1040.jpg"
+                src="/images/header-background-1040.jpg"
                 alt="Boy looking at Christmas tree"
             >
         </noscript>
@@ -128,6 +128,8 @@
                 class="footer__logo"
                 src="images/destiny-logo.png"
                 alt="Destiny Church logo"
+                role="button"
+                onClick="window.location = 'http://idestiny.org.au/';"
             />
             <p class="footer__contact">
                 For more information contact Destiny Church on:
@@ -145,8 +147,11 @@
     ></script>
     <script>
         // Lazy Load css
-        const lowPriority = document.getElementById('low-priority').innerHTML;
-        document.getElementsByTagName('head')[0].innerHTML = document.getElementsByTagName('head')[0].innerHTML + lowPriority;
+        const styles = document.createElement('link');
+        styles.rel = 'stylesheet';
+        styles.type = 'text/css';
+        styles.href = '/styles.min.css'
+        document.getElementsByTagName('head')[0].appendChild(styles);
 
         // lazy loads elements with default selector as '.lozad'
         const observer = lozad(); 

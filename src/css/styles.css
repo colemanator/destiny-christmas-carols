@@ -116,7 +116,7 @@
     font-weight: 300;
     text-transform: uppercase;
     margin: 0 0 20px;
-    color: #dc933a;
+    color: #d66a2e;
 }
 
 .main__entertainment__description {
@@ -153,7 +153,7 @@
     font-weight: 300;
     text-transform: uppercase;
     margin: 0 0 20px;
-    color: #dc933a;
+    color: #d66a2e;
 }
 
 .main__market-stalls__description {
@@ -200,7 +200,7 @@
     font-size: 28;
     font-weight: 300;
     text-transform: uppercase;
-    color: #dc933a;
+    color: #d66a2e;
     margin: 0 0 20px;
 }
 
@@ -211,16 +211,16 @@
     border-radius: 2px;
     cursor: pointer;
     background-color: white;
-    box-shadow: -3px 5px 21px -7px rgba(220,147,58,.0);
-    color: #dc933a;
-    border: 0.5px solid rgba(220,147,58,.3);
+    box-shadow: -3px 5px 21px -7px rgba(213, 109, 99,.0);
+    color: #d66a2e;
+    border: .5px solid #d66a2e;
     transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
     margin: 0 0 20px;
     text-decoration: none;
 }
 
 .main__location__button:hover {
-    box-shadow: -3px 5px 21px -7px rgba(220,147,58,.3);
+    box-shadow: -3px 5px 21px -7px rgba(213, 109, 99,.3);
     transform: translateY(-5px);
 }
 
@@ -250,6 +250,7 @@ footer {
     filter: grayscale(100%) invert(100%);
     align-items: flex-end;
     height: 50px;
+    cursor: pointer;
 }
 
 .footer__contact {
@@ -261,7 +262,7 @@ footer {
 }
 
 .footer__info__phone {
-    color: #dd9859;
+    color: #d66a2e;
     max-width: 200px;
     font-size: 16px;
     font-weight: 300;
@@ -281,7 +282,7 @@ footer {
     }
 
     .main__location__picture {
-        height: 400px;
+        min-height: 400px;
     }
 
     .footer {
@@ -290,4 +291,10 @@ footer {
         justify-content: space-between;
         align-items: flex-end;
     }
+}
+
+@media (min-width: 1040px) {
+  header {
+    max-height: 60vh;
+  }
 }

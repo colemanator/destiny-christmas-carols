@@ -11,5 +11,6 @@ just plain old HTML, CSS and a little JS. Optimized for SEO and page seed perfor
 * CSS files are in the `css/` directory and minified versions are used by `index.html`.
 * I wouldn't recommend storing minified resources in `git` but this thing is simple and small.
 * Images are stored using [git-lfs]
+* There is no build process
 
 [git-lfs]: https://git-lfs.github.com/
