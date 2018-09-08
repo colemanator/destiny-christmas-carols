@@ -90,7 +90,7 @@
 }
 
 .main__rule {
-    border: 0.5px solid black;
+    border: 0.5px solid #2a3235;
     width: 60%;
     max-width: 420px;
     margin: 60px 0;
@@ -108,14 +108,7 @@
 .main__entertainment__heading {
     font-size: 38px;
     font-weight: 500;
-    margin: 0;
-}
-
-.main__entertainment__sub-heading {
-    font-size: 28;
-    font-weight: 300;
-    text-transform: uppercase;
-    margin: 0 0 20px;
+    margin: 0 0 15px;
     color: #d66a2e;
 }
 
@@ -145,14 +138,7 @@
 .main__market-stalls__heading {
     font-size: 38px;
     font-weight: 500;
-    margin: 0;
-}
-
-.main__market-stalls__sub-heading {
-    font-size: 28;
-    font-weight: 300;
-    text-transform: uppercase;
-    margin: 0 0 20px;
+    margin: 0 0 15px;
     color: #d66a2e;
 }
 
@@ -184,7 +170,15 @@
 .main__location__heading {
     font-size: 38px;
     font-weight: 500;
-    margin: 0;
+    margin: 0 0 15px;
+    color: #d66a2e;
+}
+
+.main__location__sub-heading {
+    font-size: 28;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0 0 20px;
 }
 
 .main__location__picture {
@@ -194,14 +188,6 @@
 
 .main__location__picture img {
     width: 100%;
-}
-
-.main__location__sub-heading {
-    font-size: 28;
-    font-weight: 300;
-    text-transform: uppercase;
-    color: #d66a2e;
-    margin: 0 0 20px;
 }
 
 .main__location__button {    
