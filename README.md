@@ -1,4 +1,4 @@
-# Destiny Community Carols
+# Destiny Christmas Carols
 This is a very simple static site for a Christmas event. There are no build pipelines
 just plain old HTML, CSS and a little JS. Optimized for SEO and page seed performance.
 
