@@ -66,6 +66,18 @@
     </header>
 
     <main class="main">
+
+        <!-- FB sharing button -->
+        <div 
+            class="fb-like main_fb" 
+            data-href="https://destinychristmascarols.com"  
+            data-layout="standard" 
+            data-action="like" 
+            data-size="small" 
+            data-show-faces="true" 
+            data-share="true"
+        ></div>
+
         <section class="main__entertainment">
             <h1 class="main__entertainment__heading">
                 Live Entertainment
@@ -160,6 +172,7 @@
     <!-- JS -->
     <script 
         type="text/javascript"
+        defer
         src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"
     ></script>
     <script 
@@ -167,18 +180,11 @@
         defer
         src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0" 
     ></script>
-    <script>
-        // Lazy Load css
-        const styles = document.createElement('link');
-        styles.rel = 'stylesheet';
-        styles.type = 'text/css';
-        styles.href = '/styles.min.css'
-        document.getElementsByTagName('head')[0].appendChild(styles);
-
-        // lazy loads elements with default selector as '.lozad'
-        const observer = lozad(); 
-        observer.observe();
-    </script>
+    <script
+        type="text/javascript"
+        defer
+        src="index.min.js"
+    ></script>
     <script type="application/ld+json">
         {
           "@context": "http://schema.org",
